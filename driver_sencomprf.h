@@ -12,7 +12,7 @@
 
 struct SensusCompRF: Driver
 {
-  SensusCompRF(std::string key = "") : Driver(std::string("sensuscomprf"), key) {};
+  SensusCompRF(std::string key = "") : Driver(std::string("sencomprf"), key) {};
   virtual esphome::optional<std::map<std::string, double>> get_values(std::vector<unsigned char> &telegram) override {
     std::map<std::string, double> ret_val{};
 
